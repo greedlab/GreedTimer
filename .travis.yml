@@ -1,0 +1,30 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+# if the version of ruby is too low
+#language: ruby
+#rvm:
+#- 2.2.3
+
+language: objective-c
+before_install:
+#- gem install cocoapods
+#- gem install cocoapods -v 0.39.0
+#- gem install xcpretty
+# - pod install --project-directory=Example
+
+language: objective-c
+osx_image: xcode7.3
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install xcpretty
+# Since Travis is not always on latest version
+# - gem install cocoapods
+# use version 0.39.0 for ruby 2.2.3
+# - gem install cocoapods -v 0.39.0
+# - pod install --project-directory=Example
+script:
+- set -o pipefail && xcodebuild test -workspace Example/GreedTimer.xcworkspace -scheme GreedTimer-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint

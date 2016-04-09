@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
+
+target 'GreedTimer_Example', :exclusive => true do
+  pod 'GreedTimer', :path => '../'
+end
+
+target 'GreedTimer_Tests', :exclusive => true do
+  pod 'GreedTimer', :path => '../'
+
+  
+end
