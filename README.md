@@ -1,9 +1,11 @@
 # GreedTimer
 
-[![CI Status](http://img.shields.io/travis/Bell/GreedTimer.svg?style=flat)](https://travis-ci.org/Bell/GreedTimer)
+[![CI Status](http://img.shields.io/travis/greedlab/GreedTimer.svg?style=flat)](https://travis-ci.org/greedlab/GreedTimer)
 [![Version](https://img.shields.io/cocoapods/v/GreedTimer.svg?style=flat)](http://cocoapods.org/pods/GreedTimer)
 [![License](https://img.shields.io/cocoapods/l/GreedTimer.svg?style=flat)](http://cocoapods.org/pods/GreedTimer)
 [![Platform](https://img.shields.io/cocoapods/p/GreedTimer.svg?style=flat)](http://cocoapods.org/pods/GreedTimer)
+
+GCD Timer for iOS
 
 ## Usage
 
@@ -14,7 +16,7 @@
             [weakSelf timer1Changed:weakTimer];
         };
         self.key1 = timer.key;
-        [[GRTimerManager sharedInstance] addTimer:timer];
+        [[GRTimerManager sharedInstance] addAndRunTimer:timer];
 ```
 
 ## develop
@@ -35,10 +37,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "GreedTimer"
 ```
-
-## Author
-
-Bell, bell@greedlab.com
 
 ## License
 
