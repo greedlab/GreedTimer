@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #s.resource_bundles = {
   #  'GreedTimer' => ['Pod/Assets/*.png']
   #}
-   s.resources = 'Pod/Assets/*.png'
+  # s.resources = 'Pod/Assets/*.png'
 
   # s.prefix_header_file = 'Pod/Classes/GreedTimer.pch'
   # s.public_header_files = 'Pod/Classes/**/*.h'
