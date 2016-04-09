@@ -7,9 +7,25 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```objc
+        GRTimer *timer = [[GRTimer alloc] init];
+        __weak __typeof(GRTimer *)weakTimer = timer;
+        timer.action = ^{
+            [weakSelf timer1Changed:weakTimer];
+        };
+        self.key1 = timer.key;
+        [[GRTimerManager sharedInstance] addTimer:timer];
+```
 
-## Requirements
+## develop
+
+```shell
+$ pod lib create GreedTimer --template-url=git@github.com:GreedBell/pod-template.git
+$ cd GreedTimer
+$ pod update --no-repo-update --project-directory=Example/
+$ pod lib lint GreedTimer.podspec --verbose
+$ pod trunk push GreedTimer.podspec
+```
 
 ## Installation
 

@@ -1,0 +1,17 @@
+PODS:
+  - GreedTimer (0.0.1)
+  - Masonry (1.0.0)
+
+DEPENDENCIES:
+  - GreedTimer (from `../`)
+  - Masonry
+
+EXTERNAL SOURCES:
+  GreedTimer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GreedTimer: aaee9eaf91afa193d5d809baa58cd57c100a8a88
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+
+COCOAPODS: 0.39.0

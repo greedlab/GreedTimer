@@ -14,3 +14,7 @@
     @import UIKit;
     @import Foundation;
 #endif
+
+#ifndef WeakSelf
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#endif
