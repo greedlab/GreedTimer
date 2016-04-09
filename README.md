@@ -38,6 +38,10 @@ it, simply add the following line to your Podfile:
 pod "GreedTimer"
 ```
 
+## Thanks
+
+* [选择 GCD 还是 NSTimer ？](http://www.jianshu.com/p/0c050af6c5ee)
+
 ## License
 
 GreedTimer is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
