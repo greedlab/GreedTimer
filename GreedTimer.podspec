@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GreedTimer"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "GCD timer for iOS."
   s.homepage         = "https://github.com/greedlab/GreedTimer"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
