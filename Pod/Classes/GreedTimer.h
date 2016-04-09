@@ -10,7 +10,6 @@
 #define GreedTimer_h
 
 #import "GRTimerManager.h"
-#import "NSObject+GRTimer.h"
 #import "GRTimer.h"
 
 #endif /* GreedTimer_h */
